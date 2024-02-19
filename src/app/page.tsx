@@ -64,7 +64,7 @@ export default function Home() {
           <h4 className="mb-10 text-4xl md:text-5xl font-bold">Дрони</h4>
           <div className="grid grid-cols-1 grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 items-center h-fit w-full max-w-3xl gap-20">
             {droneCards.map((card) => (
-              <DroneCard card={card} />
+              <DroneCard key={card.id} card={card} />
             ))}
           </div>
         </MaxWidthWrapper>
