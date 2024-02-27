@@ -75,11 +75,8 @@ export default function Home() {
       <section id="contacts" className="mb-12">
         <MaxWidthWrapper>
           <h4 className="mb-10 text-4xl md:text-5xl font-bold">Контакти</h4>
-          <div className="grid grid-cols-1 grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 items-center h-fit w-full max-w-3xl gap-20">
+          <div className="flex justify-center items-center h-full">
             <ContactForm />
-            <div className="bg-cover bg-right bg-no-repeat h-full w-full">
-              Подзвони нам, або залиш заявку і ми відповімо на всі твої питання!
-            </div>
           </div>
         </MaxWidthWrapper>
       </section>
