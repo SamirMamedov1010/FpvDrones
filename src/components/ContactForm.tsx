@@ -2,16 +2,16 @@
 
 import droneCards from "@/DroneCards"
 import { Card, CardHeader, Divider, CardBody, CardFooter, Select, SelectItem, Input, Button } from "@nextui-org/react"
-import { Plane } from "lucide-react"
+import DroneIcon from "./DroneIcon"
 
 const ContactForm = () => {
   return (
     <Card className="max-w-[400px]">
     <CardHeader className="flex gap-3">
-      <Plane />
+      <DroneIcon />
       <div className="flex flex-col">
-        <p className="text-md">DroneDiller</p>
-        <p className="text-small text-default-500">dronediller.ua</p>
+        <p className="text-md">FPV Diller</p>
+        <p className="text-small text-default-500">fpvdiller.ua</p>
       </div>
     </CardHeader>
     <Divider/>

@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation'
 import MaxWidthWrapper from './MaxWidthWrapper'
 import Link from 'next/link'
 import { Plane } from 'lucide-react'
+import DroneIcon from './DroneIcon'
 
 const Footer = () => {
   const pathname = usePathname()
@@ -16,9 +17,9 @@ const Footer = () => {
   return (
     <footer className='flex-grow-0'>
       <MaxWidthWrapper>
-        <div className='pb-8 pt-16'>
-          <div className='flex justify-center'>
-            <Plane className='mr-2' />
+        <div className='pb-8 pt-16 flex justify-center'>
+          <div className='flex flex-col justify-center'>
+            <DroneIcon />
             FPV Diller
           </div>
         </div>

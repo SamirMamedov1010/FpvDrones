@@ -1,8 +1,9 @@
 "use client"
 
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
-import { Plane } from "lucide-react";
+
 import { useState } from "react";
+import DroneIcon from "./DroneIcon";
 
 const NavMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,41 +16,41 @@ const NavMenu = () => {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Plane />
-          <p className="font-bold text-inherit">DroneDiller</p>
+          <DroneIcon />
+          <p className="font-bold text-inherit">FPV Diller</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#features">
             Переваги
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" aria-current="page">
+          <Link color="foreground" href="#drones" aria-current="page">
             Дрони
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#contacts">
             Контакти
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#features">
             Переваги
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem isActive>
-          <Link href="#" aria-current="page">
+          <Link href="#drones" aria-current="page">
             Дрони
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#contacts">
             Контакти
           </Link>
         </NavbarMenuItem>
